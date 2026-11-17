@@ -1,0 +1,15 @@
+# Data cache and training outputs (large / regenerable)
+data/
+runs/
+*.pt
+*.npy
+*.parquet
+__pycache__/
+*.pyc
+# Course handout
+ece285_hw2.pdf
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
