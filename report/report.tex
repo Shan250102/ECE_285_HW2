@@ -11,6 +11,13 @@
 \usepackage{microtype}
 \usepackage{xcolor}
 
+% Tighter spacing around figures, tables and captions to fit in 2 pages
+\setlength{\intextsep}{6pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{6pt plus 2pt minus 2pt}
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{4pt}
+\setlength{\belowcaptionskip}{2pt}
+
 \title{Generating Paintings with a Deep Convolutional GAN on WikiArt}
 
 \author{Shan Ananth \\ ECE 285 \\ University of California, San Diego \\ sananth@ucsd.edu \\
@@ -18,6 +25,7 @@
 
 \begin{document}
 \maketitle
+\vspace{-1.5em}
 
 \begin{abstract}
 We train a deep convolutional generative adversarial network (DCGAN) to synthesize $64\times64$ paintings from the WikiArt dataset. Trained for 100 epochs on 81.4k paintings, the best generator reaches FID $15.5$ (standard pool3 features; $0.0192$ with the PyTorch-Ignite default) and Inception Score $2.99$ on 50k samples, a $4.3\times$ FID improvement over a baseline trained on an 18k-image subset.
