@@ -13,3 +13,7 @@ ece285_hw2.pdf
 *.log
 *.out
 *.synctex.gz
+
+# Earlier versions (kept locally only)
+report/report_baseline.pdf
+report/figs/

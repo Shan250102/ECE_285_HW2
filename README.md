@@ -12,7 +12,7 @@ code/
   make_figures.py   # loss curves, FID-vs-epoch, sample grids
 report/
   report.tex, neurips_2025.sty, report.pdf
-  figs/, figs_full/ # figures used in the report
+  figs_full/        # figures used in the report
 ```
 
 ## Reproduce
@@ -20,7 +20,7 @@ report/
 python code/prepare_data.py --out data/wikiart64.pt            # or --kaggle_dir /path/to/wikiart
 python code/train_gan.py --data data/wikiart64.pt --out runs/dcgan
 python code/evaluate.py --ckpt runs/dcgan/<checkpoint> --data data/wikiart64.pt
-python code/make_figures.py --run runs/dcgan --out report/figs
+python code/make_figures.py --run runs/dcgan --out report/figs_full
 ```
 
 The dataset cache (`data/`) and checkpoints (`runs/`) are not committed because of their size.
